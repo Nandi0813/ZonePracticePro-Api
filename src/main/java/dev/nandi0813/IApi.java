@@ -7,12 +7,14 @@ public abstract class IApi
 
     public static IApi instance = null;
 
+    public static IApi getInstance() {
+        return instance;
+    }
+
     public enum DivisionName {
         SHORT,
         FULL
     }
-
-    public abstract IApi getInstance();
 
     public abstract String getPlayerDivision(Player player, DivisionName divisionName);
 
