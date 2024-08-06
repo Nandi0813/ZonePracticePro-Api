@@ -16,6 +16,8 @@ public abstract class ZonePracticeApi
         FULL
     }
 
+    public abstract void setup();
+
     public abstract String getPlayerDivision(Player player, DivisionName divisionName);
 
     public abstract int getPlayerUnRankedLeft(Player player);
