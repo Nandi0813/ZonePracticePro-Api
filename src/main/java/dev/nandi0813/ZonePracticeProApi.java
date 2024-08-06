@@ -5,6 +5,8 @@ import org.bukkit.entity.Player;
 public interface ZonePracticeProApi
 {
 
+    ZonePracticeProApi getInstance();
+
     enum DivisionName {
         SHORT,
         FULL
@@ -19,6 +21,8 @@ public interface ZonePracticeProApi
     void resetPlayerUnRanked(Player player);
 
     void resetPlayerRanked(Player player);
+
+    void addPlayerUnRanked(Player player, int amount);
 
     void addPlayerRanked(Player player, int amount);
 
