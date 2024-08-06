@@ -92,36 +92,22 @@ public abstract class ZonePracticeApi
     public abstract int getExperience(Player player);
 
     /**
-     * Get the player's wins for a specific ladder
-     * @param player The player
-     * @param ladder The ladder's name
-     * @return The player's wins
-     */
-    public abstract int getLadderWins(Player player, String ladder);
-
-    /**
-     * Get the player's losses for a specific ladder
-     * @param player The player
-     * @param ladder The ladder's name
-     * @return The player's losses
-     */
-    public abstract int getLadderLosses(Player player, String ladder);
-
-    /**
      * Get the player's wins for a specific weight class
      * @param player The player
+     * @param ladder The ladder
      * @param weightClass The weight class
      * @return The player's wins
      */
-    public abstract int getWins(Player player, WeightClass weightClass);
+    public abstract int getLadderWins(Player player, String ladder, WeightClass weightClass);
 
     /**
      * Get the player's losses for a specific weight class
      * @param player The player
+     * @param ladder The ladder
      * @param weightClass The weight class
      * @return The player's losses
      */
-    public abstract int getLosses(Player player, WeightClass weightClass);
+    public abstract int getLadderLosses(Player player, String ladder, WeightClass weightClass);
 
     /**
      * Get the player's global wins
