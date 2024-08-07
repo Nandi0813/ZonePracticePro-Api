@@ -1,5 +1,7 @@
-package dev.nandi0813;
+package dev.nandi0813.api;
 
+import dev.nandi0813.api.Enum.DivisionName;
+import dev.nandi0813.api.Enum.WeightClass;
 import org.bukkit.entity.Player;
 
 public abstract class ZonePracticeApi
@@ -9,16 +11,6 @@ public abstract class ZonePracticeApi
 
     public static ZonePracticeApi getInstance() {
         return instance;
-    }
-
-    public enum DivisionName {
-        SHORT,
-        FULL
-    }
-
-    public enum WeightClass {
-        UNRANKED,
-        RANKED
     }
 
     /**
